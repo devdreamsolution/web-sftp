@@ -1,1 +1,2 @@
 pysftp
+flask_cors

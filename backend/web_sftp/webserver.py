@@ -1,9 +1,12 @@
-import flask
 import json
+
+import flask
+import flask_cors
 
 
 def setup_server():
     app = flask.Flask(__name__)
+    cors = flask_cors.CORS(app, resources={r"*": {"origins": "*"}})
 
     @app.route('/', methods=['GET'])
     def index():

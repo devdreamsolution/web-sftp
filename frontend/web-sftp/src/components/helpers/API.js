@@ -21,5 +21,5 @@ function sendJson(method, url, obj, json = true) {
 }
 
 export default {
-  getHostContent: () => sendJson('GET', '/files')
+  getHostContent: () => sendJson('GET', 'http://localhost:5000/files')
 };
